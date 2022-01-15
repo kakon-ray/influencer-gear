@@ -70,6 +70,15 @@ Start  Navbar Section
   color: var(--main-color);
 }
 
+/* Mobile manue style */
+nav #myLinks {
+  display: none;
+  text-align: center;
+}
+
+.icon {
+  display: none;
+}
 /* ============================================
 End Navbar Section
 ================================================*/
@@ -235,7 +244,7 @@ End populer collection section
 Start Contact section
 ================================================*/
 .contact-section {
-  box-shadow: 0px 4px 8px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -333,6 +342,9 @@ Start Mediaquery
 ================================================*/
 
 @media only screen and (max-width: 688px) {
+  .navbar {
+    flex-direction: row;
+  }
   .journy-details h1 {
     font-size: 30px;
   }
@@ -340,13 +352,96 @@ Start Mediaquery
   .navbar .logo h1 {
     font-size: 17px;
   }
+
+  /* MObile manu sty */
+  #myLinks {
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    width: 100%;
+
+    padding: 20px 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  #myLinks a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #myLinks p:hover {
+    background-color: #fff;
+    width: 100%;
+    color: var(--main-color);
+    padding: 10px 0;
+  }
+  #myLinks p:hover a {
+    color: var(--main-color);
+  }
+
+  /* mobile manue style */
+  .icon {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: space-between;
+    position: relative;
+  }
+
+  .navbar .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    cursor: pointer;
+    color: var(--main-color);
+  }
+
+  /* MObile manu sty */
+  #myLinks {
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    width: 100%;
+
+    padding: 20px 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  #myLinks a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #myLinks p:hover {
+    background-color: #fff;
+    width: 100%;
+    color: var(--main-color);
+    padding: 10px 0;
+  }
+  #myLinks p:hover a {
+    color: var(--main-color);
+  }
 }
 
 @media only screen and (max-width: 688px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
   .navbar ul {
     display: none;
   }
@@ -401,11 +496,62 @@ Start Mediaquery
   .contact-section p {
     text-align: center;
   }
+
+  /* mobile manue style */
+  .icon {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: space-between;
+    position: relative;
+  }
+
+  .navbar .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    cursor: pointer;
+    color: var(--main-color);
+  }
+
+  #myLinks {
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    width: 100%;
+
+    padding: 20px 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  #myLinks a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #myLinks p:hover {
+    background-color: #fff;
+    width: 100%;
+    color: var(--main-color);
+    padding: 10px 0;
+  }
+  #myLinks p:hover a {
+    color: var(--main-color);
+  }
 }
 @media only screen and (min-width: 688px) and (max-width: 992px) {
   .navbar {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
   }
   .navbar ul {
     display: none;
@@ -460,5 +606,57 @@ Start Mediaquery
 
   .contact-section p {
     text-align: center;
+  }
+
+  /* mobile manue style */
+  .icon {
+    display: block;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: space-between;
+    position: relative;
+  }
+
+  .navbar .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    cursor: pointer;
+    color: var(--main-color);
+  }
+
+  #myLinks {
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    width: 100%;
+
+    padding: 20px 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  #myLinks a {
+    text-decoration: none;
+    padding-left: 10px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  #myLinks p:hover {
+    background-color: #fff;
+    width: 100%;
+    color: var(--main-color);
+    padding: 10px 0;
+  }
+  #myLinks p:hover a {
+    color: var(--main-color);
   }
 }

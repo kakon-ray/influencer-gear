@@ -18,7 +18,20 @@
     <header class="top-header-width">
       <nav class="navbar">
         <span class="logo"><h1>Influencer products</h1></span>
-        <ul>
+        <!-- Start mobile manue -->
+        <div id="myLinks">
+          <p><a href="#home">Home</a></p>
+          <p><a href="#logo">Products</a></p>
+          <p><a href="#contact">Sign up</a></p>
+          <p><a href="#contact">Log Ins</a></p>
+          <p><a href="#contact">Contact</a></p>
+        </div>
+        <!-- toggle button -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <!-- End mobile manue -->
+        <ul class="large">
           <li><a href="#home">home</a></li>
           <li><a href="#logo">Products</a></li>
           <li><a href="#contact">Sign up</a></li>
@@ -326,5 +339,19 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      window.onresize = () => {
+        window.location.reload();
+      };
+    </script>
   </body>
 </html>
